@@ -1,4 +1,8 @@
 param location string = 'southcentralus'
+param githubRepo string = 'https://github.com/harryd012/harryd012.git"
+param githubBranch string = 'main'
+param githubToken string
+
 param storageAccountName string = 'sta01234'
 param blobName string = 'blob01'
 param packageUri string = 'https://humankind01.com/app01.zip'
