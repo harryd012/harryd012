@@ -5,7 +5,7 @@ param acrName string = 'acr${uniqueString(resourceGroup().id)}' // Valid ACR nam
 param aksName string = 'aks0123'
 param aksNodepoolName string = 'nodepool0123'
 
-resource aks 'Microsoft.ContainerService/mancd agedClusters@2021-08-01' = {
+resource aks 'Microsoft.ContainerService/managedClusters@2021-08-01' = {
   name: aksName
   location: location
   identity: { type: 'SystemAssigned' }
